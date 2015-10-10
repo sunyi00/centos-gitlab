@@ -7,5 +7,5 @@ RUN yum -y install \
         python-pip \
         unzip \
     && curl -s https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.rpm.sh | bash \
-    && yum install gitlab-ce-8.0.4-ce.1.el7.x86_64 \
+    && yum install -y gitlab-ce-8.0.4-ce.1.el7.x86_64 \
     && yum -y clean all
